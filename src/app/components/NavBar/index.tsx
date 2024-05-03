@@ -6,7 +6,7 @@ const containerClass = "flex items-center justify-between gap-4";
 
 export default function NavBar() {
   return (
-    <nav className="w-full px-6 py-4 flex justify-between items-center">
+    <nav className="w-full bg-white px-6 py-4 flex justify-between items-center fixed">
       <div className={containerClass}>
         <button>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -18,8 +18,8 @@ export default function NavBar() {
         </Link>
       </div>
 
-      <div className={containerClass}>
-        <div className="rounded-full w-80 border-2 border-gray-200 overflow-hidden flex">
+      <div className={`w-1/3 ${containerClass}`}>
+        <div className="w-full rounded-full border-2 border-gray-200 overflow-hidden flex">
           <input className="w-full bg-transparent px-4 py-2 outline-none" type="text" placeholder="Search" />
           <button className="bg-gray-100 px-4 py-2 border-l-2 border-gray-200">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -28,9 +28,9 @@ export default function NavBar() {
           </button>
         </div>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z" />
-        </svg>
+        <button className="w-10 h-12 flex justify-center items-center">
+          <Image className="w-10 h-10" src="/icons/microphone.png" alt="Microphone" width={36} height={36} />
+        </button>
       </div>
 
       <div className={containerClass}>

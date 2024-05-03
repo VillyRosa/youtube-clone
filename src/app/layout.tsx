@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 
 export const metadata: Metadata = {
   title: "YouTube Clone",
-  description: "YouTube Clone built with Next.js and Tailwind CSS",
+  description: "YouTube Clone built with Next.js and Tailwind CSS"
 };
 
 export default function RootLayout({
